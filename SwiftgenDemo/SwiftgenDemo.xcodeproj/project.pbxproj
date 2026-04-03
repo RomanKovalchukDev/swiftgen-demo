@@ -1,0 +1,854 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		302D6C232F48B3FD0082A2DE /* NerdLogger in Frameworks */ = {isa = PBXBuildFile; productRef = 302D6C222F48B3FD0082A2DE /* NerdLogger */; };
+		302D6C2D2F48B7640082A2DE /* PopupView in Frameworks */ = {isa = PBXBuildFile; productRef = 302D6C2C2F48B7640082A2DE /* PopupView */; };
+		302D6C492F48D7100082A2DE /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 302D6C482F48D7100082A2DE /* Alamofire */; };
+		B0166C5D2D1828D80010E391 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = B0166C5C2D1828D80010E391 /* FirebaseAnalytics */; };
+		B0166C5F2D1828D80010E391 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = B0166C5E2D1828D80010E391 /* FirebaseCore */; };
+		B0166C612D1828D80010E391 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = B0166C602D1828D80010E391 /* FirebaseCrashlytics */; };
+		B0166C632D1828D80010E391 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = B0166C622D1828D80010E391 /* FirebaseMessaging */; };
+		B0166C652D1828D80010E391 /* FirebasePerformance in Frameworks */ = {isa = PBXBuildFile; productRef = B0166C642D1828D80010E391 /* FirebasePerformance */; };
+		B06C1ED72D1B49590080A0FD /* Atlantis in Frameworks */ = {isa = PBXBuildFile; productRef = B06C1ED62D1B49590080A0FD /* Atlantis */; };
+		B06C1EDA2D1B49770080A0FD /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = B06C1ED92D1B49770080A0FD /* Nuke */; };
+		B06C1EDC2D1B49770080A0FD /* NukeUI in Frameworks */ = {isa = PBXBuildFile; productRef = B06C1EDB2D1B49770080A0FD /* NukeUI */; };
+		B06C1EDF2D1B49F80080A0FD /* NerdzInject in Frameworks */ = {isa = PBXBuildFile; productRef = B06C1EDE2D1B49F80080A0FD /* NerdzInject */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B0166B712D177BF50010E391 /* SwiftgenDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftgenDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		B0166BE42D178E910010E391 /* Exceptions for "SwiftgenDemo" folder in "SwiftgenDemo" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				SupportingFiles/Configurations/Common/Common.xcconfig,
+				SupportingFiles/Configurations/Develop/Develop.xcconfig,
+				SupportingFiles/Configurations/Production/Production.xcconfig,
+				SupportingFiles/Info.plist,
+			);
+			target = B0166B702D177BF50010E391 /* SwiftgenDemo */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		B0166B732D177BF50010E391 /* SwiftgenDemo */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				B0166BE42D178E910010E391 /* Exceptions for "SwiftgenDemo" folder in "SwiftgenDemo" target */,
+			);
+			path = SwiftgenDemo;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B0166B6E2D177BF50010E391 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0166C632D1828D80010E391 /* FirebaseMessaging in Frameworks */,
+				B0166C612D1828D80010E391 /* FirebaseCrashlytics in Frameworks */,
+				302D6C232F48B3FD0082A2DE /* NerdLogger in Frameworks */,
+				B0166C652D1828D80010E391 /* FirebasePerformance in Frameworks */,
+				B06C1ED72D1B49590080A0FD /* Atlantis in Frameworks */,
+				B06C1EDF2D1B49F80080A0FD /* NerdzInject in Frameworks */,
+				B0166C5F2D1828D80010E391 /* FirebaseCore in Frameworks */,
+				B06C1EDC2D1B49770080A0FD /* NukeUI in Frameworks */,
+				B0166C5D2D1828D80010E391 /* FirebaseAnalytics in Frameworks */,
+				302D6C492F48D7100082A2DE /* Alamofire in Frameworks */,
+				B06C1EDA2D1B49770080A0FD /* Nuke in Frameworks */,
+				302D6C2D2F48B7640082A2DE /* PopupView in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B0166B682D177BF50010E391 = {
+			isa = PBXGroup;
+			children = (
+				B0166B732D177BF50010E391 /* SwiftgenDemo */,
+				B0166B722D177BF50010E391 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B0166B722D177BF50010E391 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B0166B712D177BF50010E391 /* SwiftgenDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B0166B702D177BF50010E391 /* SwiftgenDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B0166B7F2D177BF70010E391 /* Build configuration list for PBXNativeTarget "SwiftgenDemo" */;
+			buildPhases = (
+				B0166BE52D1790540010E391 /* Run SwiftGen */,
+				B0166B6D2D177BF50010E391 /* Sources */,
+				B0166B6E2D177BF50010E391 /* Frameworks */,
+				B0166B6F2D177BF50010E391 /* Resources */,
+				B0166BE72D1790820010E391 /* Set Correct GoogleInfo.plist */,
+				B0166BE82D1790FF0010E391 /* Run Firebase Crashlytics */,
+				B0166BE92D1791610010E391 /* Run SwiftLint */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				B0166B732D177BF50010E391 /* SwiftgenDemo */,
+			);
+			name = SwiftgenDemo;
+			packageProductDependencies = (
+				B0166C5C2D1828D80010E391 /* FirebaseAnalytics */,
+				B0166C5E2D1828D80010E391 /* FirebaseCore */,
+				B0166C602D1828D80010E391 /* FirebaseCrashlytics */,
+				B0166C622D1828D80010E391 /* FirebaseMessaging */,
+				B0166C642D1828D80010E391 /* FirebasePerformance */,
+				B06C1ED62D1B49590080A0FD /* Atlantis */,
+				B06C1ED92D1B49770080A0FD /* Nuke */,
+				B06C1EDB2D1B49770080A0FD /* NukeUI */,
+				B06C1EDE2D1B49F80080A0FD /* NerdzInject */,
+				302D6C222F48B3FD0082A2DE /* NerdLogger */,
+				302D6C2C2F48B7640082A2DE /* PopupView */,
+				302D6C482F48D7100082A2DE /* Alamofire */,
+			);
+			productName = SwiftgenDemo;
+			productReference = B0166B712D177BF50010E391 /* SwiftgenDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B0166B692D177BF50010E391 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 2620;
+				TargetAttributes = {
+					B0166B702D177BF50010E391 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+				};
+			};
+			buildConfigurationList = B0166B6C2D177BF50010E391 /* Build configuration list for PBXProject "SwiftgenDemo" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B0166B682D177BF50010E391;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				B0166C5B2D1828D80010E391 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				B06C1ED52D1B49590080A0FD /* XCRemoteSwiftPackageReference "atlantis" */,
+				B06C1ED82D1B49770080A0FD /* XCRemoteSwiftPackageReference "Nuke" */,
+				B06C1EDD2D1B49F80080A0FD /* XCRemoteSwiftPackageReference "NerdzInject" */,
+				302D6C212F48B3FD0082A2DE /* XCRemoteSwiftPackageReference "nerd-logger" */,
+				302D6C2B2F48B7640082A2DE /* XCRemoteSwiftPackageReference "PopupView" */,
+				302D6C472F48D7100082A2DE /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = B0166B722D177BF50010E391 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B0166B702D177BF50010E391 /* SwiftgenDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B0166B6F2D177BF50010E391 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B0166BE52D1790540010E391 /* Run SwiftGen */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run SwiftGen";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [[ \"$(uname -m)\" == arm64 ]]\nthen\n    export PATH=\"/opt/homebrew/bin:$PATH\"\nfi\n\nif command -v swiftlint >/dev/null 2>&1\nthen\n    swiftgen config run\nelse\n    echo \"warning: `swiftgen` command not found\"\nfi\n";
+		};
+		B0166BE72D1790820010E391 /* Set Correct GoogleInfo.plist */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Set Correct GoogleInfo.plist";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cp -r \"${PROJECT_DIR}/SwiftgenDemo/SupportingFiles/Configurations/${CFG_FIREBASE_FOLDER_NAME}/${CFG_FIREBASE_PLIST_NAME}.plist\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.app/GoogleService-Info.plist\";\n";
+		};
+		B0166BE82D1790FF0010E391 /* Run Firebase Crashlytics */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}",
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Resources/DWARF/${PRODUCT_NAME}",
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Info.plist",
+				"$(TARGET_BUILD_DIR)/$(UNLOCALIZED_RESOURCES_FOLDER_PATH)/GoogleService-Info.plist",
+				"$(TARGET_BUILD_DIR)/$(EXECUTABLE_PATH)",
+			);
+			name = "Run Firebase Crashlytics";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#if [[ -f \"${BUILD_DIR%/Build/*}/SourcePackages/checkouts/firebase-ios-sdk/Crashlytics/run\" ]]; then\n # \"${BUILD_DIR%/Build/*}/SourcePackages/checkouts/firebase-ios-sdk/Crashlytics/run\"\n#else\n # echo \"warning: Crashlytics is not installed.\"\n#fi\n";
+		};
+		B0166BE92D1791610010E391 /* Run SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run SwiftLint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [[ \"$(uname -m)\" == arm64 ]]\nthen\n    export PATH=\"/opt/homebrew/bin:$PATH\"\nfi\n\nif command -v swiftlint >/dev/null 2>&1\nthen\n    swiftlint --config \"${PROJECT_DIR}/swiftlint.yml\"\nelse\n    echo \"warning: `swiftlint` command not found - See https://github.com/realm/SwiftLint#installation for installation instructions.\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B0166B6D2D177BF50010E391 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		B0166B7D2D177BF70010E391 /* Debug Dev */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = B0166B732D177BF50010E391 /* SwiftgenDemo */;
+			baseConfigurationReferenceRelativePath = SupportingFiles/Configurations/Develop/Develop.xcconfig;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = "$(CFG_CURRENT_PROJECT_VERSION)";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 7LSA5W5LLW;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "$(CFG_COPYRIGHT)";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = "$(CFG_MARKETING_VERSION)";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = "Debug Dev";
+		};
+		B0166B7E2D177BF70010E391 /* Release Dev */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = B0166B732D177BF50010E391 /* SwiftgenDemo */;
+			baseConfigurationReferenceRelativePath = SupportingFiles/Configurations/Develop/Develop.xcconfig;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = "$(CFG_CURRENT_PROJECT_VERSION)";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 7LSA5W5LLW;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "$(CFG_COPYRIGHT)";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = "$(CFG_MARKETING_VERSION)";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = "Release Dev";
+		};
+		B0166B802D177BF70010E391 /* Debug Dev */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = B0166B732D177BF50010E391 /* SwiftgenDemo */;
+			baseConfigurationReferenceRelativePath = SupportingFiles/Configurations/Develop/Develop.xcconfig;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = "$(inherited)";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftgenDemo/SupportingFiles/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SwiftgenDemo/SupportingFiles/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "$(CFG_DISPLAY_NAME)";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "$(inherited)";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = "$(CFG_APP_ID)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited) DEV_ENV";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Debug Dev";
+		};
+		B0166B812D177BF70010E391 /* Release Dev */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = B0166B732D177BF50010E391 /* SwiftgenDemo */;
+			baseConfigurationReferenceRelativePath = SupportingFiles/Configurations/Develop/Develop.xcconfig;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = "$(inherited)";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftgenDemo/SupportingFiles/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SwiftgenDemo/SupportingFiles/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "$(CFG_DISPLAY_NAME)";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "$(inherited)";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = "$(CFG_APP_ID)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEV_ENV;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Release Dev";
+		};
+		B0166B842D177EB30010E391 /* Debug Prod */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = B0166B732D177BF50010E391 /* SwiftgenDemo */;
+			baseConfigurationReferenceRelativePath = SupportingFiles/Configurations/Production/Production.xcconfig;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = "$(CFG_CURRENT_PROJECT_VERSION)";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 7LSA5W5LLW;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "$(CFG_COPYRIGHT)";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = "$(CFG_MARKETING_VERSION)";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = "Debug Prod";
+		};
+		B0166B852D177EB30010E391 /* Debug Prod */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = B0166B732D177BF50010E391 /* SwiftgenDemo */;
+			baseConfigurationReferenceRelativePath = SupportingFiles/Configurations/Production/Production.xcconfig;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = "$(inherited)";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftgenDemo/SupportingFiles/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SwiftgenDemo/SupportingFiles/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "$(CFG_DISPLAY_NAME)";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "$(inherited)";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = "$(CFG_APP_ID)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Debug Prod";
+		};
+		B0166B862D177ED10010E391 /* Relese Prod */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = B0166B732D177BF50010E391 /* SwiftgenDemo */;
+			baseConfigurationReferenceRelativePath = SupportingFiles/Configurations/Production/Production.xcconfig;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = "$(CFG_CURRENT_PROJECT_VERSION)";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 7LSA5W5LLW;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "$(CFG_COPYRIGHT)";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = "$(CFG_MARKETING_VERSION)";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = "Relese Prod";
+		};
+		B0166B872D177ED10010E391 /* Relese Prod */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = B0166B732D177BF50010E391 /* SwiftgenDemo */;
+			baseConfigurationReferenceRelativePath = SupportingFiles/Configurations/Production/Production.xcconfig;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = "$(inherited)";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftgenDemo/SupportingFiles/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SwiftgenDemo/SupportingFiles/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "$(CFG_DISPLAY_NAME)";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "$(inherited)";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = "$(CFG_APP_ID)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Relese Prod";
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B0166B6C2D177BF50010E391 /* Build configuration list for PBXProject "SwiftgenDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0166B7D2D177BF70010E391 /* Debug Dev */,
+				B0166B842D177EB30010E391 /* Debug Prod */,
+				B0166B7E2D177BF70010E391 /* Release Dev */,
+				B0166B862D177ED10010E391 /* Relese Prod */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Release Dev";
+		};
+		B0166B7F2D177BF70010E391 /* Build configuration list for PBXNativeTarget "SwiftgenDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0166B802D177BF70010E391 /* Debug Dev */,
+				B0166B852D177EB30010E391 /* Debug Prod */,
+				B0166B812D177BF70010E391 /* Release Dev */,
+				B0166B872D177ED10010E391 /* Relese Prod */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Release Dev";
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		302D6C212F48B3FD0082A2DE /* XCRemoteSwiftPackageReference "nerd-logger" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RomanKovalchukDev/nerd-logger.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		302D6C2B2F48B7640082A2DE /* XCRemoteSwiftPackageReference "PopupView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/exyte/PopupView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.1.19;
+			};
+		};
+		302D6C472F48D7100082A2DE /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.11.1;
+			};
+		};
+		B0166C5B2D1828D80010E391 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.6.0;
+			};
+		};
+		B06C1ED52D1B49590080A0FD /* XCRemoteSwiftPackageReference "atlantis" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ProxymanApp/atlantis.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.26.0;
+			};
+		};
+		B06C1ED82D1B49770080A0FD /* XCRemoteSwiftPackageReference "Nuke" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kean/Nuke.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.8.0;
+			};
+		};
+		B06C1EDD2D1B49F80080A0FD /* XCRemoteSwiftPackageReference "NerdzInject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/nerdzlab/NerdzInject.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		302D6C222F48B3FD0082A2DE /* NerdLogger */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 302D6C212F48B3FD0082A2DE /* XCRemoteSwiftPackageReference "nerd-logger" */;
+			productName = NerdLogger;
+		};
+		302D6C2C2F48B7640082A2DE /* PopupView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 302D6C2B2F48B7640082A2DE /* XCRemoteSwiftPackageReference "PopupView" */;
+			productName = PopupView;
+		};
+		302D6C482F48D7100082A2DE /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 302D6C472F48D7100082A2DE /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		B0166C5C2D1828D80010E391 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B0166C5B2D1828D80010E391 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		B0166C5E2D1828D80010E391 /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B0166C5B2D1828D80010E391 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+		B0166C602D1828D80010E391 /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B0166C5B2D1828D80010E391 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+		B0166C622D1828D80010E391 /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B0166C5B2D1828D80010E391 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+		B0166C642D1828D80010E391 /* FirebasePerformance */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B0166C5B2D1828D80010E391 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebasePerformance;
+		};
+		B06C1ED62D1B49590080A0FD /* Atlantis */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B06C1ED52D1B49590080A0FD /* XCRemoteSwiftPackageReference "atlantis" */;
+			productName = Atlantis;
+		};
+		B06C1ED92D1B49770080A0FD /* Nuke */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B06C1ED82D1B49770080A0FD /* XCRemoteSwiftPackageReference "Nuke" */;
+			productName = Nuke;
+		};
+		B06C1EDB2D1B49770080A0FD /* NukeUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B06C1ED82D1B49770080A0FD /* XCRemoteSwiftPackageReference "Nuke" */;
+			productName = NukeUI;
+		};
+		B06C1EDE2D1B49F80080A0FD /* NerdzInject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B06C1EDD2D1B49F80080A0FD /* XCRemoteSwiftPackageReference "NerdzInject" */;
+			productName = NerdzInject;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = B0166B692D177BF50010E391 /* Project object */;
+}

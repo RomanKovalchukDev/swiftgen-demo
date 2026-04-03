@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ApiBaseURL</key>
+	<string>https://api.example.com</string>
+	<key>ApiVersion</key>
+	<string>v1</string>
+	<key>EnableLogging</key>
+	<true/>
+	<key>MaxRetryAttempts</key>
+	<integer>3</integer>
+	<key>TimeoutInterval</key>
+	<real>30.0</real>
+	<key>SupportedLanguages</key>
+	<array>
+		<string>en</string>
+		<string>es</string>
+		<string>fr</string>
+	</array>
+	<key>FeatureFlags</key>
+	<dict>
+		<key>EnableDarkMode</key>
+		<true/>
+		<key>EnableNotifications</key>
+		<true/>
+		<key>EnableAnalytics</key>
+		<false/>
+	</dict>
+</dict>
+</plist>

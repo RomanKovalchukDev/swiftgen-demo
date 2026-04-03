@@ -1,0 +1,85 @@
+## SwiftGen Configuration for Demo Project
+## This file configures SwiftGen to generate type-safe accessors for all resources
+
+## Base directories for inputs and outputs
+input_dir: SwiftgenDemo/
+output_dir: SwiftgenDemo/SupportingFiles/Generated/
+
+## Generate constants for Assets Catalogs (images, colors, etc.)
+## - forceProvidesNamespaces: Creates sub-namespaces for each folder/group
+## - allValues: Generates arrays of all values (deprecated but included for demonstration)
+xcassets:
+  inputs:
+    - SupportingFiles/Assets/
+  outputs:
+    - templateName: swift5
+      params:
+        forceProvidesNamespaces: true
+        allValues: true
+      output: XCassets+Generated.swift
+
+## Generate constants for Localized Strings
+## Uses structured-swift5 template with L10n enum
+## Each string in Localizable.strings becomes a static property
+strings:
+  inputs:
+    - SupportingFiles/Localization/en.lproj
+  outputs:
+    - templateName: structured-swift5
+      params:
+        enumName: L10n
+      output: Strings+Generated.swift
+
+## Generate constants for Custom Fonts
+## Provides type-safe access to custom font files
+## Each font family becomes an enum with available weights
+## Note: Currently manually maintained due to SwiftGen font detection limitations
+# fonts:
+#   inputs:
+#     - SupportingFiles/Fonts
+#   outputs:
+#     - templateName: swift5
+#       output: Fonts+Generated.swift
+
+## Generate constants for Plist files
+## Using inline template to embed plist data directly in Swift code
+## Runtime template loads data at runtime (use for dynamic configs)
+plist:
+  inputs:
+    - SupportingFiles/Plists
+  outputs:
+    # Inline template: Embeds plist data directly in generated code
+    - templateName: inline-swift5
+      output: Plists+Generated.swift
+    # Runtime template: Loads plist data at runtime from bundle
+    # Uncomment below to use runtime loading instead
+    # - templateName: runtime-swift5
+    #   output: PlistsRuntime+Generated.swift
+
+## Additional parsers available but not used in this demo:
+##
+## CoreData: Generate type-safe access to Core Data entities
+# coredata:
+#   inputs: path/to/model.xcdatamodeld
+#   outputs:
+#     templateName: swift5
+#     output: CoreData+Generated.swift
+##
+## JSON: Parse custom JSON files and generate code
+# json:
+#   inputs: path/to/data.json
+#   outputs:
+#     templateName: inline-swift5
+#     output: JSON+Generated.swift
+##
+## YAML: Parse custom YAML files
+# yaml:
+#   inputs: path/to/config.yaml
+#   outputs:
+#     templateName: inline-swift5
+#     output: YAML+Generated.swift
+
+## For more information:
+## - SwiftGen Documentation: https://github.com/SwiftGen/SwiftGen
+## - Template Documentation: swiftgen template doc <parser> <template>
+## - Configuration Validation: swiftgen config lint

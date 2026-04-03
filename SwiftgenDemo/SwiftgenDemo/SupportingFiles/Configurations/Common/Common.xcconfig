@@ -1,0 +1,10 @@
+//
+//  Develop.xcconfig
+//
+//  Configuration settings file format documentation can be found at:
+//  https://help.apple.com/xcode/#/dev745c5c974
+
+CFG_TEAM_ID = 7LSA5W5LLW
+CFG_COPYRIGHT = Copyright © Change me. All rights reserved.
+CFG_MARKETING_VERSION = 1.0.0
+CFG_CURRENT_PROJECT_VERSION = 1

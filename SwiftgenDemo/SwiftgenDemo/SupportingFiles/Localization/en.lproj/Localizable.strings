@@ -1,0 +1,41 @@
+/* App Name */
+"app.name" = "SwiftGen Demo";
+
+/* Welcome Messages */
+"welcome.title" = "Welcome to SwiftGen";
+"welcome.message" = "Type-safe access to your resources";
+
+/* User Greetings */
+"user.greeting" = "Hello, %@!";
+"user.items" = "%@ has %d items";
+
+/* Buttons */
+"button.ok" = "OK";
+"button.cancel" = "Cancel";
+"button.save" = "Save";
+
+/* Tabs */
+"tab.home" = "Home";
+"tab.strings" = "Strings";
+"tab.colors" = "Colors";
+"tab.images" = "Images";
+"tab.fonts" = "Fonts";
+"tab.config" = "Config";
+
+/* Demo Sections */
+"demo.colors.title" = "Color Palette";
+"demo.colors.description" = "Type-safe color access with SwiftGen";
+"demo.fonts.title" = "Custom Fonts";
+"demo.fonts.description" = "Type-safe font access with SwiftGen";
+
+/* Alerts */
+"alert.title" = "Attention";
+"alert.message" = "This is an alert message";
+
+/* Success/Error Messages */
+"success.saved" = "Successfully saved!";
+"error.unknown" = "An unknown error occurred";
+"error.network" = "Network connection error";
+
+/* Other */
+"items.count" = "You have %d items";

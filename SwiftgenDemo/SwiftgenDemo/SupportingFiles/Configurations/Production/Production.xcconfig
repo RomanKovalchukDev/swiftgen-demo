@@ -1,0 +1,11 @@
+//
+//  Production.xcconfig
+//
+
+#include "SwiftgenDemo/SupportingFiles/Configurations/Common/Common.xcconfig"
+
+CFG_APP_ID = com.prod.template.app
+CFG_DISPLAY_NAME = SwiftgenDemo
+
+CFG_FIREBASE_FOLDER_NAME = Production
+CFG_FIREBASE_PLIST_NAME = GoogleService-Info-Prod
